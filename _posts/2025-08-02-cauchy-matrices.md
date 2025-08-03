@@ -8,9 +8,11 @@ tags: [mathematics, signal_processing, matrices]
 
 ## Introduction to Cauchy matrices
 
-Cauchy matrices are a special class of structured matrices, whose entries are the ratio of differences of two sequences. This structure makes them useful in signal processing: I've used them to derive fast algorithms (i.e., with the same asymptotic complexity as the fast Fourier transform) for graph-based transforms.
+Cauchy matrices are a special class of structured matrices, whose entries are the ratio of differences of two sequences. This structure makes them useful in signal processing: I've used them to derive fast matrix-vector product algorithms (in signal processing terms, like the FFT for the DFT) for graph-based transforms [1].
 
-While there are some great papers on the topic, I believe Cauchy matrices are not as well known as they should be. I find the [Wikipedia article](https://en.wikipedia.org/wiki/Cauchy_matrix) on the topic to be too succinct to actually understand how useful these matrices are.
+<br/> <br/>
+
+While there are some great papers on the topic [2], I believe Cauchy matrices are not as well known as they should be. I will focus on a more intuitive perspective, including its connection to the symmetric eigenvalue problem, which hopefully will complement the [Wikipedia article](https://en.wikipedia.org/wiki/Cauchy_matrix) on the topic.
 
 ## Definition
 
@@ -60,6 +62,12 @@ where $V(x)$ is a Vandermonde matrix and the division is element-wise.
 ## Conclusion
 
 Cauchy matrices provide a powerful tool in various areas of signal processing and coding theory. Their special structure enables efficient computations and their properties make them invaluable in error correction and interpolation problems. Understanding these matrices can provide deeper insights into many signal processing algorithms and coding schemes.
+
+## References
+
+[1] S. Fernández-Menduiña, E. Pavez, and A. Ortega, "Fast DCT+: A Family of Fast Transforms Based on Rank-One Updates of the Path Graph," *2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, pp. 1-5, 2025.
+
+[2] Fasino, Dario. "Orthogonal Cauchy-like matrices." *Numerical Algorithms* 92.1 (2023): 619-637.
 
 ## Further Reading
 
