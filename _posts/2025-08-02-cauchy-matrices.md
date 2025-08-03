@@ -8,7 +8,9 @@ tags: [mathematics, signal_processing, matrices]
 
 ## Introduction to Cauchy matrices
 
-Cauchy matrices are a special class of structured matrices, whose entries are the ratio of differences of two sequences. This structure makes them useful in signal processing: they can be used to derive fast algorithms (with the same asymptotic complexity as the fast Fourier transform) for graph-based transforms.
+Cauchy matrices are a special class of structured matrices, whose entries are the ratio of differences of two sequences. This structure makes them useful in signal processing: I've used them to derive fast algorithms (i.e., with the same asymptotic complexity as the fast Fourier transform) for graph-based transforms.
+
+While there are some great papers on the topic, I believe Cauchy matrices are not as well known as they should be. I find the [Wikipedia article](https://en.wikipedia.org/wiki/Cauchy_matrix) on the topic to be too succinct to actually understand how useful these matrices are.
 
 ## Definition
 
