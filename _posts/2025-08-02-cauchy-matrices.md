@@ -8,24 +8,35 @@ tags: [mathematics, signal_processing, matrices]
 
 ## Introduction to Cauchy matrices
 
-Cauchy matrices are a special class of structured matrices, whose entries are the ratio of differences of two sequences. This structure makes them useful in signal processing: I've used them to derive fast matrix-vector product algorithms (in signal processing terms, like the FFT for the DFT) for graph-based transforms [1].
+Cauchy matrices are a special class of structured matrices whose entries are the ratio of differences of two sequences. This structure makes them useful in signal processing: I've used them to derive fast matrix-vector product algorithms (in signal processing terms, like the FFT for the DFT) for graph-based transforms [1].
 
 <br/> <br/>
 
-While there are some great papers on Cauchy matrices [2], I believe they are relatively less known than other structured matrices, such as Vandermonde or Hadamard matrices. The main goal of this post is to highlight their relationship to the symmetric eigenvalue problem, which hopefully will complement the [Wikipedia article](https://en.wikipedia.org/wiki/Cauchy_matrix) on the topic.
+While there are some great papers on Cauchy matrices [2], I believe they are relatively less known than other structured matrices, such as Vandermonde or Hadamard matrices. The main goal of this post is to show how Cauchy matrices appear when computing the eigenvectors of a rank-one update of a symmetric matrix. In doing so, we will present some of their key properties.
+
+<br/> <br/>
 
 ## Definition
 
-A Cauchy matrix is an $m \times n$ matrix $C$ with entries given by:
+A Cauchy matrix is an $m \times n$ matrix $\mathbf{C}(\mathbf{x}, \mathbf{y})$ parametrized by two vectors $\mathbf{x} \in \mathbb{R}^m$ and $\mathbf{y} \in \mathbb{R}^n$ with entries given by:
 
 $$ C_{i,j} = \frac{1}{x_i - y_j} $$
 
-where $x_1, x_2, \ldots, x_m$ and $y_1, y_2, \ldots, y_n$ are elements of a field (typically real or complex numbers) such that $x_i \neq y_j$ for all $i,j$.
+where $\mathbf{x} = [x_1, x_2, \ldots, x_m]$ and $\mathbf{y} = [y_1, y_2, \ldots, y_n]$ are two vectors such that $x_i \neq y_j$ for all $i,j$. We also require that $x_i \neq x_j$ for all $i,j$ and $y_i \neq y_j$ for all $i,j$.
+
+<br/> <br/>
 
 ## Key properties
 
+Cauchy matrices satisfy multiple properties. Most of them can be found online, such as in the [Wikipedia article](https://en.wikipedia.org/wiki/Cauchy_matrix). Just to name a few:
+
 1. **Nonsingularity**: All square Cauchy matrices are invertible.
 2. **Structured Rank**: Cauchy matrices have low displacement rank, making them computationally efficient.
+3. Every submatrix of a Cauchy matrix is also a Cauchy matrix.
+
+<br/> <br/>
+
+Remarkably, there exists analytic expressions for the inverse and the determinant of a Cauchy matrix.
 
 ## Example: Constructing a Cauchy Matrix
 
