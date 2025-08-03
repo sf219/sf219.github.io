@@ -2,94 +2,102 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-{% include _head.html %}
-<style>
-  .bottom-three {
-     margin-bottom: 1.5cm;
-   }
-  .bottom-small {
-     margin-bottom: 1cm;
-   }
-</style>
+  {% include _head.html %}
+  <style>
+    .bottom-three { margin-bottom: 1.5cm; }
+    .bottom-small { margin-bottom: 1cm; }
+  </style>
 </head>
 
 <body class="page">
 
-{% include _browser-upgrade.html %}
+  {% include _browser-upgrade.html %}
+  {% include _navigation.html %}
 
-{% include _navigation.html %}
-
-{% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
-    {% if page.image.feature contains 'http://' %}
-      "{{ page.image.feature }}"
-    {% elsif page.image.feature contains 'https://' %}
-      "{{ page.image.feature }}"
-    {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
-    {% endif %}
-  alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% if page.image.feature %}
+    <div class="image-wrap">
+      <img src=
+        {% if page.image.feature contains 'http://' %}
+           "{{ page.image.feature }}"
+        {% elsif page.image.feature contains 'https://' %}
+           "{{ page.image.feature }}"
+        {% else %}
+           "{{ site.url }}/images/{{ page.image.feature }}"
+        {% endif %}
+      alt="{{ page.title }} feature image">
+      {% if page.image.credit %}
+        <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+      {% endif %}
+    </div>
   {% endif %}
-  </div><!-- /.image-wrap -->
-{% endif %}
-<div id="main" role="main">
-  <div class="article-author-side">
-    {% include _author-bio.html %}
-  </div>
-  <article>
-   <!-- <h1>{{ page.title }}</h1> -->
-    <div class="article-wrap">
-    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/work_bag.jpg" alt="Work Experience" width="70" height="70"></p>
-    
-      <p align="center">&#8226 I am a <strong>research scientist</strong> at <a href="https://research.google.com" target="_blank">AtlanTTIC</a>.</p>
-      <p align="center">&#8226 I was a post-graduate researcher at ICL with <a href="http://alumni.media.mit.edu/~ayush/" target="_blank">Dr Bhandari</a>.</p>
-      <p align="center" class="bottom-three">&#8226 I collaborated with the startup <a href="https://aidfork.uvigo.es/" target="_blank">AidFork</a> as a UG researcher.</p>
 
+  <div id="main" role="main">
+    <div class="article-author-side">
+      {% include _author-bio.html %}
+    </div>
+    <article>
+      <div class="article-wrap">
 
-    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/academic_hat.png" alt="Education" width="70" height="70"></p>
-    
-      <p align="center">&#8226 I have a MSc Communications and Signal Processing from Imperial College London.</p>
-      <p align="center">&#8226 I received a Bachelor's degree in telecommunications engineering from the University of Vigo.</p>
-      <p align="center" class="bottom-three">&#8226 I am a Barrié Foundation Scholar.</p>      
-    
-      
-    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/gauss.jpg" alt="Computer Skills" width="80" height="80"></p>
-    
-      <p align="center">&#8226 It is not <strong>MATLAB</strong> all that glitters. But in this case, it is.</p>
-      <p align="center">&#8226 I am shifting towards <strong>Python</strong>, as an open source alternative for mathematical programming and data science.</p>
-      <p align="center">&#8226 For real time SigProc,  <strong>C++</strong> has never failed me.</p>   
-      <p align="center">&#8226 I type almost everything in <strong>LaTeX</strong>. Yes, even the slides.</p>
+        <!-- • Work Experience -->
+        <p align="center" class="bottom-small">
+          <img src="{{ site.url }}/images/CV/work_bag.jpg" alt="Work Experience" width="70" height="70">
+        </p>
 
-    <br/>
-      
-    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/lang.jpg" alt="Languages" width="70" height="70"></p>
-    
-      <p align="center">&#8226 O <strong>galego</strong> é a miña lingua materna.</p>
-      <p align="center">&#8226 También hablo <strong>español</strong> como lengua materna.</p>
-      <p align="center">&#8226 My <strong>English</strong> is working.</p>
-    <br/>
-    
-    
-    {{ content }}
-    </div><!-- /.article-wrap -->
-    {% if site.disqus_shortname and page.comments %}
-      <section id="disqus_thread"></section><!-- /#disqus_thread -->
-    {% endif %}
-  </article>
-</div><!-- /#index -->
+        <p align="center">
+          &#8226 I am currently a <strong>PhD student</strong> at the <a href="https://www.usc.edu" target="_blank">University of Southern California</a>, specializing in signal processing and multimedia systems.
+        </p>
+        <p align="center">
+          &#8226 Previously, I worked as a contracted researcher at <a href="https://atlanttic.uvigo.es/" target="_blank">atlanTTic – University of Vigo</a>, where I contributed to multimedia stealth forensics and distributed sensing platforms.
+        </p>
+        <p align="center">
+          &#8226 I was a post‑graduate researcher at Imperial College London under <a href="https://alumni.media.mit.edu/~ayush/" target="_blank">Dr Ayush Bhandari</a>,
+          focusing on computational sensing and time‑resolved phenomena.
+        </p>
+        <p align="center" class="bottom-three">
+          &#8226 As an undergraduate, I collaborated with the startup
+          <a href="https://aidfork.uvigo.es/" target="_blank">AidFork</a> on multimedia authentication tools.
+        </p>
 
-<div class="footer-wrap">
-  <footer>
-    {% include _footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
+        <!-- • Education -->
+        <p align="center" class="bottom-small">
+          <img src="{{ site.url }}/images/CV/academic_hat.png" alt="Education" width="70" height="70">
+        </p>
 
-{% include _scripts.html %}          
+        <p align="center">
+          &#8226 Currently pursuing a PhD in Electrical &amp; Computer Engineering at USC.
+        </p>
+        <p align="center">
+          &#8226 MSc in Communications and Signal Processing, Imperial College London.
+        </p>
+        <p align="center">
+          &#8226 BSc in Telecommunications Engineering, University of Vigo; Barrié Foundation Scholar.
+        </p>
+        <p align="center" class="bottom-three">&nbsp;</p>
 
+        <p align="center" class="bottom-small">
+          <img src="{{ site.url }}/images/CV/lang.jpg" alt="Languages" width="70" height="70">
+        </p>
+
+        <p align="center">
+          &#8226 Galego (native) • Español (native) • English (fluent).
+        </p>
+
+        <br/>
+
+        {{ content }}
+
+      </div><!-- /.article-wrap -->
+    </article>
+  </div><!-- /#main -->
+
+  <div class="footer-wrap">
+    <footer>
+      {% include _footer.html %}
+    </footer>
+  </div><!-- /.footer-wrap -->
+
+  {% include _scripts.html %}
 </body>
 </html>
