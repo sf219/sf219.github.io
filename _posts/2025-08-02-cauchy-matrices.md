@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Cauchy matrices"
-description: "An introduction to Cauchy matrices"
+title: "Cauchy matrices and the symmetric eigenvalue problem"
+description: "An introduction to Cauchy matrices, with emphasis on their connection to the symmetric eigenvalue problem"
 comments: true
 tags: [mathematics, signal_processing, matrices]
 ---
@@ -12,7 +12,7 @@ Cauchy matrices are a special class of structured matrices, whose entries are th
 
 <br/> <br/>
 
-While there are some great papers on the topic [2], I believe Cauchy matrices are not as well known as they should be. I will focus on a more intuitive perspective, including its connection to the symmetric eigenvalue problem, which hopefully will complement the [Wikipedia article](https://en.wikipedia.org/wiki/Cauchy_matrix) on the topic.
+While there are some great papers on Cauchy matrices [2], I believe they are relatively less known than other structured matrices, such as Vandermonde or Hadamard matrices. The main goal of this post is to highlight their relationship to the symmetric eigenvalue problem, which hopefully will complement the [Wikipedia article](https://en.wikipedia.org/wiki/Cauchy_matrix) on the topic.
 
 ## Definition
 

@@ -16,8 +16,4 @@ Previously, I was a researcher at the University of Vigo's <a href="https://atla
 
 I completed my undergraduate studies in telecommunications engineering at the <a href="https://www.uvigo.gal/" target="_blank" style="text-decoration: underline">University of Vigo</a>.
 
-<br/><br/>
-
-This site is currently under construction.
-
 </div>
