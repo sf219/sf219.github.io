@@ -6,13 +6,33 @@
 <head>
   {% include _head.html %}
   <style>
-    .bottom-three { margin-bottom: 1.5cm; }
-    .bottom-small { margin-bottom: 1cm; }
+    .cv-section {
+      margin-bottom: 2rem;
+    }
+    .cv-section h3 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .cv-item {
+      margin-bottom: 1.5rem;
+    }
+    .cv-item .title {
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+    .cv-item .date {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    .cv-item .description {
+      margin-left: 1.5rem;
+    }
   </style>
 </head>
 
 <body class="page">
-
   {% include _browser-upgrade.html %}
   {% include _navigation.html %}
 
@@ -39,64 +59,92 @@
     </div>
     <article>
       <div class="article-wrap">
+        <!-- Work Experience -->
+        <div class="cv-section">
+          <h3>Work Experience</h3>
+          
+          <div class="cv-item">
+            <div class="title">PhD Student in Electrical & Computer Engineering</div>
+            <div class="date">2023 - Present</div>
+            <div class="institution">University of Southern California, Los Angeles, CA</div>
+            <div class="description">
+              <p>Researching signal processing and machine learning for multimedia compression and analysis.</p>
+            </div>
+          </div>
 
-        <!-- • Work Experience -->
-        <p align="center" class="bottom-small">
-          <img src="{{ site.url }}/images/CV/work_bag.jpg" alt="Work Experience" width="70" height="70">
-        </p>
+          <div class="cv-item">
+            <div class="title">Research Engineer</div>
+            <div class="date">2022 - 2023</div>
+            <div class="institution">atlanTTic Research Center, University of Vigo, Spain</div>
+            <div class="description">
+              <p>Worked on multimedia forensics and distributed sensing platforms.</p>
+            </div>
+          </div>
 
-        <p align="center">
-          &#8226 I am currently a <strong>PhD student</strong> at the <a href="https://www.usc.edu" target="_blank">University of Southern California</a>, specializing in signal processing and multimedia systems.
-        </p>
-        <p align="center">
-          &#8226 Previously, I worked as a contracted researcher at <a href="https://atlanttic.uvigo.es/" target="_blank">atlanTTic – University of Vigo</a>, where I contributed to multimedia stealth forensics and distributed sensing platforms.
-        </p>
-        <p align="center">
-          &#8226 I was a post‑graduate researcher at Imperial College London under <a href="https://alumni.media.mit.edu/~ayush/" target="_blank">Dr Ayush Bhandari</a>,
-          focusing on computational sensing and time‑resolved phenomena.
-        </p>
-        <p align="center" class="bottom-three">
-          &#8226 As an undergraduate, I collaborated with the startup
-          <a href="https://aidfork.uvigo.es/" target="_blank">AidFork</a> on multimedia authentication tools.
-        </p>
+          <div class="cv-item">
+            <div class="title">Research Assistant</div>
+            <div class="date">2021 - 2022</div>
+            <div class="institution">Imperial College London, UK</div>
+            <div class="description">
+              <p>Conducted research on computational sensing and time-resolved phenomena under Dr. Ayush Bhandari.</p>
+            </div>
+          </div>
+        </div>
 
-        <!-- • Education -->
-        <p align="center" class="bottom-small">
-          <img src="{{ site.url }}/images/CV/academic_hat.png" alt="Education" width="70" height="70">
-        </p>
+        <!-- Education -->
+        <div class="cv-section">
+          <h3>Education</h3>
+          
+          <div class="cv-item">
+            <div class="title">PhD in Electrical & Computer Engineering</div>
+            <div class="date">2023 - Present</div>
+            <div class="institution">University of Southern California, Los Angeles, CA</div>
+          </div>
 
-        <p align="center">
-          &#8226 Currently pursuing a PhD in Electrical &amp; Computer Engineering at USC.
-        </p>
-        <p align="center">
-          &#8226 MSc in Communications and Signal Processing, Imperial College London.
-        </p>
-        <p align="center">
-          &#8226 BSc in Telecommunications Engineering, University of Vigo; Barrié Foundation Scholar.
-        </p>
-        <p align="center" class="bottom-three">&nbsp;</p>
+          <div class="cv-item">
+            <div class="title">MSc in Communications and Signal Processing</div>
+            <div class="date">2020 - 2021</div>
+            <div class="institution">Imperial College London, UK</div>
+          </div>
 
-        <p align="center" class="bottom-small">
-          <img src="{{ site.url }}/images/CV/lang.jpg" alt="Languages" width="70" height="70">
-        </p>
+          <div class="cv-item">
+            <div class="title">BSc in Telecommunications Engineering</div>
+            <div class="date">2016 - 2020</div>
+            <div class="institution">University of Vigo, Spain</div>
+            <div class="description">
+              <p>Barrié Foundation Scholar</p>
+            </div>
+          </div>
+        </div>
 
-        <p align="center">
-          &#8226 Galego (native) • Español (native) • English (fluent).
-        </p>
+        <!-- Technical Skills -->
+        <div class="cv-section">
+          <h3>Technical Skills</h3>
+          <div class="cv-item">
+            <p><strong>Programming:</strong> Python, MATLAB, C++, LaTeX</p>
+            <p><strong>Machine Learning:</strong> PyTorch, TensorFlow, scikit-learn</p>
+            <p><strong>Signal Processing:</strong> Image/Video Processing, Compressed Sensing, Graph Signal Processing</p>
+          </div>
+        </div>
 
-        <br/>
+        <!-- Languages -->
+        <div class="cv-section">
+          <h3>Languages</h3>
+          <div class="cv-item">
+            <p>Galician (Native), Spanish (Native), English (Fluent)</p>
+          </div>
+        </div>
 
         {{ content }}
-
-      </div><!-- /.article-wrap -->
+      </div>
     </article>
-  </div><!-- /#main -->
+  </div>
 
   <div class="footer-wrap">
     <footer>
       {% include _footer.html %}
     </footer>
-  </div><!-- /.footer-wrap -->
+  </div>
 
   {% include _scripts.html %}
 </body>

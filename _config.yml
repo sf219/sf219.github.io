@@ -10,7 +10,7 @@ url:              //sf219.github.io
 owner:
   name:           Samuel Fernández Menduiña
   avatar:         bio-photo.png
-  bio:            PhD Student at University of Southern California. MSc Signal Processing, Imperial.
+  bio:            PhD Student at University of Southern California. MSc Signal Processing, Imperial College London.
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   linkedin: sfmenduina
   github: sf219
@@ -23,8 +23,6 @@ google_verify:
 links:
   - title: Publications
     url: /publications/
-  - title: Misc
-    url: /misc/
   - title: Blog
     url: /blog/
   - title: CV
