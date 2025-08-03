@@ -12,7 +12,7 @@ Cauchy matrices are a special class of structured matrices whose entries are the
 
 <br/> <br/>
 
-While there are some great papers on Cauchy matrices [2], I believe they are relatively less known than other structured matrices, such as Vandermonde or Hadamard matrices. The main goal of this post is to show how Cauchy matrices appear when computing the eigenvectors of a rank-one update of a symmetric matrix. In doing so, we will present some of their key properties.
+While there are some great papers on Cauchy matrices [2], I believe they are relatively less known than other structured matrices, such as Vandermonde or Hadamard matrices. The main goal of this post is to show how Cauchy matrices appear when computing the eigenvectors of rank-one updates of a symmetric matrix. In doing so, we will present some of their key properties and illustrate their practical applications.
 
 <br/> <br/>
 
