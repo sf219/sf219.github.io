@@ -21,14 +21,14 @@ google_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Curriculum
-    url: /cv/
   - title: Publications
     url: /publications/
   - title: Misc
     url: /misc/
   - title: Blog
     url: /blog/
+  - title: CV
+    url: /cv/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Madrid
