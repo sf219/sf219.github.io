@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Cauchy Matrices in Signal Processing and Coding Theory"
-description: "An introduction to Cauchy matrices and their applications in error correction and signal processing"
+title: "Cauchy Matrices"
+description: "An introduction to Cauchy matrices"
 comments: true
-tags: [mathematics, signal_processing, coding_theory, matrices]
+tags: [mathematics, signal_processing, matrices]
 ---
 
 ## Introduction to Cauchy Matrices
