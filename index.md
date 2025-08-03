@@ -10,7 +10,7 @@ I am a PhD student at the <a href="https://www.usc.edu/" target="_blank" style="
 
 <br/><br/>
 
-Previously, I was a researcher at the University of Vigo's <a href="https://atlanttic.uvigo.es/" target="_blank" style="text-decoration: underline">AtlanTTIC</a> research center, focusing on multimedia forensics. I hold an MSc in Communications and Signal Processing from <a href="https://www.imperial.ac.uk/study/pg/electrical-engineering/communications-signal-processing/" target="_blank" style="text-decoration: underline">Imperial College London</a>, where I worked on <a href="https://ieeexplore.ieee.org/document/9288566" target="_blank" style="text-decoration: underline">sampling theory</a>. 
+Previously, I was a researcher at the University of Vigo's <a href="https://atlanttic.uvigo.es/" target="_blank" style="text-decoration: underline">AtlanTTIC</a> research center, focusing on multimedia forensics. I hold an MSc in Communications and Signal Processing from <a href="https://www.imperial.ac.uk/study/pg/electrical-engineering/communications-signal-processing/" target="_blank" style="text-decoration: underline">Imperial College London</a>, where I worked on (unlimited) sampling theory. 
 
 <br/><br/>
 
