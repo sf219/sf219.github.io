@@ -8,7 +8,7 @@ tags: [mathematics, signal_processing, matrices]
 
 ## Introduction to Cauchy Matrices
 
-Cauchy matrices are a special class of matrices that find numerous applications in signal processing, coding theory, and numerical analysis. Named after the French mathematician Augustin-Louis Cauchy, these matrices have properties that make them particularly useful in error-correcting codes and interpolation problems.
+Cauchy matrices are a special class of structured matrices, whose entries are the ratio of differences of two sequences. This structure makes them useful in signal processing: they can be used to derive fast algorithms (with the same asymptotic complexity as the fast Fourier transform) for graph-based transforms.
 
 ## Definition
 
@@ -24,17 +24,6 @@ where $x_1, x_2, \ldots, x_m$ and $y_1, y_2, \ldots, y_n$ are elements of a fiel
 2. **Structured Rank**: Cauchy matrices have low displacement rank, making them computationally efficient.
 3. **Interpolation**: They naturally arise in polynomial and rational interpolation problems.
 4. **Error Correction**: Used in Reed-Solomon and other error-correcting codes.
-
-## Applications in Signal Processing
-
-### 1. Error-Correcting Codes
-Cauchy matrices are fundamental in constructing Maximum Distance Separable (MDS) codes, particularly in the construction of Reed-Solomon codes. Their property of having all square submatrices nonsingular makes them ideal for this purpose.
-
-### 2. Fast Algorithms
-The structure of Cauchy matrices allows for fast matrix-vector multiplication and solution of linear systems, which is crucial in real-time signal processing applications.
-
-### 3. Interpolation
-In signal processing, Cauchy matrices appear in problems involving rational interpolation, where we need to fit a rational function to given data points.
 
 ## Example: Constructing a Cauchy Matrix
 
