@@ -1,151 +1,90 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt‑ie8 lt‑ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt‑ie9 lt‑ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt‑ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   {% include _head.html %}
   <style>
-    .cv-section {
-      margin-bottom: 2rem;
-    }
-    .cv-section h3 {
-      border-bottom: 1px solid #eee;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .cv-item {
-      margin-bottom: 1.5rem;
-    }
-    .cv-item .title {
-      font-weight: bold;
-      margin-bottom: 0.25rem;
-    }
-    .cv-item .date {
-      color: #666;
-      font-style: italic;
-      margin-bottom: 0.5rem;
-    }
-    .cv-item .description {
-      margin-left: 1.5rem;
-    }
+     .bottom-three { margin-bottom: 1.5cm; text-align:left; }
+     .bottom-small { margin-bottom: 1cm; text-align:left; }
+     /* Left-aligned default for paragraphs and list items */
   </style>
 </head>
-
 <body class="page">
   {% include _browser-upgrade.html %}
   {% include _navigation.html %}
-
-  {% if page.image.feature %}
-    <div class="image-wrap">
-      <img src=
-        {% if page.image.feature contains 'http://' %}
-           "{{ page.image.feature }}"
-        {% elsif page.image.feature contains 'https://' %}
-           "{{ page.image.feature }}"
-        {% else %}
-           "{{ site.url }}/images/{{ page.image.feature }}"
-        {% endif %}
-      alt="{{ page.title }} feature image">
-      {% if page.image.credit %}
-        <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-      {% endif %}
-    </div>
-  {% endif %}
-
   <div id="main" role="main">
     <div class="article-author-side">
       {% include _author-bio.html %}
     </div>
     <article>
       <div class="article-wrap">
-        <!-- Work Experience -->
-        <div class="cv-section">
-          <h3>Work Experience</h3>
-          
-          <div class="cv-item">
-            <div class="title">PhD Student in Electrical & Computer Engineering</div>
-            <div class="date">2023 - Present</div>
-            <div class="institution">University of Southern California, Los Angeles, CA</div>
-            <div class="description">
-              <p>Researching signal processing and machine learning for multimedia compression and analysis.</p>
-            </div>
-          </div>
 
-          <div class="cv-item">
-            <div class="title">Research Engineer</div>
-            <div class="date">2022 - 2023</div>
-            <div class="institution">atlanTTic Research Center, University of Vigo, Spain</div>
-            <div class="description">
-              <p>Worked on multimedia forensics and distributed sensing platforms.</p>
-            </div>
-          </div>
+        <!-- EXPERIENCE -->
+        <h2 style="text-align:left;">Experience</h2>
+        <p style="text-align:left;" class="bottom-small">• I am currently a PhD student in Signal Processing &amp; Multimedia Systems at the University of Southern California (USC).</p>
+        <p style="text-align:left;" class="bottom-small">
+          • Research Scientist at atlanTTic (University of Vigo), contributing to AI‑based multimedia forensics and distributed sensing research.
+        </p>
+        <p style="text-align:left;" class="bottom-small">
+          &nbsp;&nbsp;– Part of the multidisciplinary team selected as a European partner in the €6.9 M Horizon 2020 *Uncover* project on hidden-data steganalysis—a distinction emphasized by UVigo as “a recognition of our forensics research” :contentReference[oaicite:1]{index=1}.
+        </p>
+        <p style="text-align:left;" class="bottom-small">
+          &nbsp;&nbsp;– Participated in the large-scale EU *DistriMuSe* initiative (overall budget €34.7 M), aimed at developing sensor-based architectures for public-safety and health :contentReference[oaicite:2]{index=2}.
+        </p>
+        <p style="text-align:left;" class="bottom-three">
+          • Post-graduate researcher at Imperial College London with Dr. Ayush Bhandari (formerly MIT), on topics including computational sensing, hardware-aware video compression, and time-resolved signal processing.
+        </p>
+        <p style="text-align:left;" class="bottom-three">
+          • As an undergraduate at University of Vigo, I collaborated as a researcher with AidFork on deep-learning tools for multimedia authentication.
+        </p>
 
-          <div class="cv-item">
-            <div class="title">Research Assistant</div>
-            <div class="date">2021 - 2022</div>
-            <div class="institution">Imperial College London, UK</div>
-            <div class="description">
-              <p>Conducted research on computational sensing and time-resolved phenomena under Dr. Ayush Bhandari.</p>
-            </div>
-          </div>
-        </div>
+        <!-- EDUCATION -->
+        <h2 style="text-align:left;">Education</h2>
+        <p style="text-align:left;" class="bottom-small">
+          • MSc in Communications & Signal Processing, Imperial College London.
+        </p>
+        <p style="text-align:left;" class="bottom-three">
+          • BSc in Telecommunications Engineering, University of Vigo — graduated as a Barrié Foundation Scholar.
+        </p>
 
-        <!-- Education -->
-        <div class="cv-section">
-          <h3>Education</h3>
-          
-          <div class="cv-item">
-            <div class="title">PhD in Electrical & Computer Engineering</div>
-            <div class="date">2023 - Present</div>
-            <div class="institution">University of Southern California, Los Angeles, CA</div>
-          </div>
+        <!-- RESEARCH FOCUS (integrates distinctions and topics) -->
+        <h2 style="text-align:left;">Research &amp; system-engineering focus</h2>
+        <ul style="text-align:left;">
+          <li>Multimedia forensics and evidence-grade content analysis (encrypted-domain camera-attribution & tampering detection).</li>
+          <li>AI‑driven steganalysis and hidden-data detection (steering the steganographic detectors with historical metadata of signal origin).</li>
+          <li>Feature-oriented video compression for computer vision (Coding for Machines, intermediate feature coding).</li>
+          <li>Privacy-aware inference pipelines in distributed sensing (e.g. task-aware compression for aerial/video navigation systems).</li>
+          <li>Applied systems engineering for secure media: I co-built “Fawrensian” at AidFork, a deep‑learning authenticity scoring tool developed with UVigo incubated team.</li>
+        </ul>
 
-          <div class="cv-item">
-            <div class="title">MSc in Communications and Signal Processing</div>
-            <div class="date">2020 - 2021</div>
-            <div class="institution">Imperial College London, UK</div>
-          </div>
+        <!-- KEY SKILLS -->
+        <h2 style="text-align:left;">Skills &amp; tools</h2>
+        <ul style="text-align:left;">
+          <li>MATLAB for prototyping signal-processing methods</li>
+          <li>Python (NumPy, PyTorch) for machine learning and multimedia analytics pipelines</li>
+          <li>C++ for real-time embedded and performance-critical platforms</li>
+          <li>LaTeX for high-quality typesetting (papers, slides, posters)</li>
+        </ul>
 
-          <div class="cv-item">
-            <div class="title">BSc in Telecommunications Engineering</div>
-            <div class="date">2016 - 2020</div>
-            <div class="institution">University of Vigo, Spain</div>
-            <div class="description">
-              <p>Barrié Foundation Scholar</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Technical Skills -->
-        <div class="cv-section">
-          <h3>Technical Skills</h3>
-          <div class="cv-item">
-            <p><strong>Programming:</strong> Python, MATLAB, C++, LaTeX</p>
-            <p><strong>Machine Learning:</strong> PyTorch, TensorFlow, scikit-learn</p>
-            <p><strong>Signal Processing:</strong> Image/Video Processing, Compressed Sensing, Graph Signal Processing</p>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="cv-section">
-          <h3>Languages</h3>
-          <div class="cv-item">
-            <p>Galician (Native), Spanish (Native), English (Fluent)</p>
-          </div>
-        </div>
+        <!-- LANGUAGES -->
+        <br/>
+        <p style="text-align:left;" class="bottom-small">
+          <img src="{{ site.url }}/images/CV/lang.jpg" alt="Languages" width="70" height="70">
+        </p>
+        <p style="text-align:left;">• Galego (native)</p>
+        <p style="text-align:left;">• Español (native)</p>
+        <p style="text-align:left;">• English (professional proficiency)</p>
+        <br/>
 
         {{ content }}
-      </div>
+      </div><!-- /.article-wrap -->
     </article>
-  </div>
-
+  </div><!-- /#main -->
   <div class="footer-wrap">
-    <footer>
-      {% include _footer.html %}
-    </footer>
+    <footer>{% include _footer.html %}</footer>
   </div>
-
   {% include _scripts.html %}
 </body>
 </html>
