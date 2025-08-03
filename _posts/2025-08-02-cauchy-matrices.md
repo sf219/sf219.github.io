@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Cauchy Matrices"
+title: "Cauchy matrices"
 description: "An introduction to Cauchy matrices"
 comments: true
 tags: [mathematics, signal_processing, matrices]
 ---
 
-## Introduction to Cauchy Matrices
+## Introduction to Cauchy matrices
 
 Cauchy matrices are a special class of structured matrices, whose entries are the ratio of differences of two sequences. This structure makes them useful in signal processing: they can be used to derive fast algorithms (with the same asymptotic complexity as the fast Fourier transform) for graph-based transforms.
 
@@ -18,12 +18,10 @@ $$ C_{i,j} = \frac{1}{x_i - y_j} $$
 
 where $x_1, x_2, \ldots, x_m$ and $y_1, y_2, \ldots, y_n$ are elements of a field (typically real or complex numbers) such that $x_i \neq y_j$ for all $i,j$.
 
-## Key Properties
+## Key properties
 
 1. **Nonsingularity**: All square Cauchy matrices are invertible.
 2. **Structured Rank**: Cauchy matrices have low displacement rank, making them computationally efficient.
-3. **Interpolation**: They naturally arise in polynomial and rational interpolation problems.
-4. **Error Correction**: Used in Reed-Solomon and other error-correcting codes.
 
 ## Example: Constructing a Cauchy Matrix
 
