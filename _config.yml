@@ -35,6 +35,8 @@ future:      true
 highlighter: rouge
 markdown:    kramdown
 kramdown:
+  math_engine: mathjax
+  math_engine_opts: {}
   extensions: ["strikethrough"]
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
