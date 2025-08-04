@@ -53,9 +53,3 @@ Remarkably, there are analytic expressions for the inverse and the determinant o
 [1] S. Fernández-Menduiña, E. Pavez, and A. Ortega, "Fast DCT+: A Family of Fast Transforms Based on Rank-One Updates of the Path Graph," *2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, pp. 1-5, 2025.
 
 [2] Fasino, Dario. "Orthogonal Cauchy-like matrices." *Numerical Algorithms* 92.1 (2023): 619-637.
-
-## Further Reading
-
-1. Golub, G. H., & Van Loan, C. F. (2013). Matrix computations. JHU press.
-2. Davis, P. J. (1979). Circulant matrices. John Wiley & Sons.
-3. Blahut, R. E. (2003). Algebraic codes for data transmission. Cambridge university press.
