@@ -42,45 +42,11 @@ Cauchy matrices satisfy multiple properties. Most of them can be found online, s
 2. **Structured Rank**: Cauchy matrices have low displacement rank, making them computationally efficient.
 3. Every submatrix of a Cauchy matrix is also a Cauchy matrix.
 
-<br/> <br/>
+Remarkably, there are analytic expressions for the inverse and the determinant of a Cauchy matrix.
 
-Remarkably, there exists analytic expressions for the inverse and the determinant of a Cauchy matrix.
+## Rank-one updates of a symmetric matrix
 
-## Example: Constructing a Cauchy Matrix
 
-Here's a simple Python function to create a Cauchy matrix:
-
-```python
-import numpy as np
-
-def cauchy_matrix(x, y):
-    """
-    Create a Cauchy matrix from vectors x and y.
-    x, y: 1D arrays or lists
-    Returns: 2D numpy array
-    """
-    x = np.array(x).reshape(-1, 1)  # Convert to column vector
-    return 1 / (x - y)  # Broadcasting does the rest
-
-# Example usage
-x = [1, 2, 3, 4]
-y = [5, 6, 7]
-C = cauchy_matrix(x, y)
-print("Cauchy matrix:")
-print(C)
-```
-
-## Connection to Vandermonde Matrices
-
-Cauchy matrices are closely related to Vandermonde matrices. In fact, a Cauchy matrix can be expressed as:
-
-$$ C = \frac{1}{V(x)V(-y)^T} $$
-
-where $V(x)$ is a Vandermonde matrix and the division is element-wise.
-
-## Conclusion
-
-Cauchy matrices provide a powerful tool in various areas of signal processing and coding theory. Their special structure enables efficient computations and their properties make them invaluable in error correction and interpolation problems. Understanding these matrices can provide deeper insights into many signal processing algorithms and coding schemes.
 
 ## References
 
