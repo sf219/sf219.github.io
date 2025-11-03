@@ -19,11 +19,13 @@ I completed my undergraduate studies in telecommunications engineering at the <a
 
 </div>
 
-<div style="border: 2px solid #4CAF50; border-radius: 5px; padding: 15px; margin-top: 30px; background-color: #f9f9f9;">
-  <h3 style="margin-top: 0; color: #4CAF50;">📰 News</h3>
+<div style="border: 2px solid #FFA500; border-radius: 5px; padding: 15px; margin-top: 30px; background-color: #FFFAF0;">
+  <h3 style="margin-top: 0; color: #FF8C00;">📰 News</h3>
   <ul style="margin-bottom: 0;">
-    <li><strong>Nov 2025:</strong> Your news item here</li>
-    <li><strong>Oct 2025:</strong> Another news item</li>
-    <li><strong>Sep 2025:</strong> More news</li>
+    <li><strong>Nov 2025:</strong> Our coding for machines paper has been accepted to IEEE TMM. Check the project webpage <a href="https://sf219.github.io/TMM_CfM/" target="_blank" style="text-decoration: underline">here</a>.</li>    
+    <li><strong>Oct 2025:</strong> I presented our joint work with YouTube on UGC compression in ICIP (Anchorage, Alaska).</li>
+    <li><strong>Sep 2025:</strong> Our paper on fast transforms has been accepted to PCS 2025! I'll be presenting it this December in Aachen, Germany. </li>
+    <li><strong>May 2025-Aug 2025:</strong> I'll be interning with InterDigital in Palo Alto, working on feature coding for machines. </li>
+    <li><strong>April 2025:</strong> I'll be presenting our paper on fast graph-based transforms in ICASSP 2025, Hyderabad, India. </li>
   </ul>
 </div>
