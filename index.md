@@ -16,4 +16,14 @@ Previously, I was a researcher at the University of Vigo's <a href="https://atla
 
 I completed my undergraduate studies in telecommunications engineering at the <a href="https://www.uvigo.gal/" target="_blank" style="text-decoration: underline">University of Vigo</a>.
 
+
+</div>
+
+<div style="border: 2px solid #4CAF50; border-radius: 5px; padding: 15px; margin-top: 30px; background-color: #f9f9f9;">
+  <h3 style="margin-top: 0; color: #4CAF50;">📰 News</h3>
+  <ul style="margin-bottom: 0;">
+    <li><strong>Nov 2025:</strong> Your news item here</li>
+    <li><strong>Oct 2025:</strong> Another news item</li>
+    <li><strong>Sep 2025:</strong> More news</li>
+  </ul>
 </div>
