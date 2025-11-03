@@ -20,7 +20,7 @@ I completed my undergraduate studies in telecommunications engineering at the <a
 </div>
 
 <div style="border: 2px solid #FFA500; border-radius: 5px; padding: 15px; margin-top: 30px; background-color: #FFFAF0;">
-  <h3 style="margin-top: 0; color: #FF8C00;">📰 News</h3>
+  <h3 style="margin-top: 0; margin-bottom: 10px; color: #FF8C00;">📰 News</h3>
   <ul style="margin-bottom: 0;">
     <li style="margin-bottom: 10px;"><strong>Nov 2025:</strong> Our coding for machines paper has been accepted to IEEE TMM! Check the project webpage <a href="https://sf219.github.io/TMM_CfM/" target="_blank" style="text-decoration: underline">here</a>.</li>    
     <li style="margin-bottom: 10px;"><strong>Oct 2025:</strong> I presented our joint work with YouTube on UGC compression in ICIP (Anchorage, Alaska). The paper is publicly available <a href="https://arxiv.org/pdf/2505.15003/" target="_blank" style="text-decoration: underline">here</a>. </li>
